@@ -1,8 +1,23 @@
-<html>
+<!DOCTYPE html>
     <head>
-
+        <meta charset="UTF-8">
     </head>
     <body>
         <h1>Simple Calculator</h1>
+        <form>
+            <label for="fnum" name="fnum">First number:</label><br>
+            <input type="number" id="fnum" name="fnum"><br><br>
+            <label for="lnum" name="lnum">Second number:</label><br>
+            <input type="number" id="lnum" name="lnum"><br><br>
+            <input type="button" name="button" value="➕" onclick="add(this.form)"><br><br>
+            <input type="button" name="button" value="➖" onclick="subtract(this.form)"><br><br>
+            <input type="button" name="button" value="➗" onclick="divide(this.form)"><br><br>
+            <input type="button" name="button" value="✖️" onclick="multiply(this.form)"><br><br>
+            <span>Result:</span><br><br>
+            
+        </form>
+        <span id="res-el"></span>
+        
+        <script src="index.js"></script> 
     </body>
 </html>
